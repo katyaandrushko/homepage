@@ -11,9 +11,9 @@ body {
    --primary-text-color: #181820;
    --secondary-text-color: #5c5c62;
    --durability-text-color: #6a737d9c;
-   --icon-color: rgb(116, 112, 113);
-   --border-color: rgb(239, 216, 220);
-   --text-decoration-color: rgb(247, 158, 173);
+   --icon-color: rgb(116 112 113);
+   --border-color: rgb(239 216 220);
+   --text-decoration-color: rgb(247 158 173);
 }
 
 .container {
@@ -89,7 +89,6 @@ body {
 
 .typing-demo {
    width: 22ch;
-
    animation: typing 3s steps(17), blink 0.5s step-end infinite alternate;
    white-space: nowrap;
    overflow: hidden;

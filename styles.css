@@ -7,13 +7,12 @@
 body {
    font-family: Arial, Helvetica, sans-serif;
    line-height: 1.5;
-
    --primary-text-color: #181820;
    --secondary-text-color: #5c5c62;
    --durability-text-color: #6a737d9c;
-   --icon-color: #6a737d;
-   --border-color: #ff9a0045;
-   --text-decoration-color: #ff9a00;
+   --icon-color: rgb(116, 112, 113);
+   --border-color: rgb(239, 216, 220);
+   --text-decoration-color: rgb(247, 158, 173);
 }
 
 .container {
@@ -79,6 +78,39 @@ body {
    margin-bottom: 15px;
    text-decoration-color: var(--text-decoration-color);
    text-decoration-line: underline;
+}
+
+.contact-info__header_position {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+
+.typing-demo {
+   width: 22ch;
+
+   animation: typing 3s steps(17), blink 0.5s step-end infinite alternate;
+   white-space: nowrap;
+   overflow: hidden;
+   border-right: 2px solid;
+   font-size: 20px;
+   color: var(--primary-text-color);
+   margin-bottom: 15px;
+   text-decoration-color: var(--text-decoration-color);
+   text-decoration-line: underline;
+   text-align: center;
+}
+
+@keyframes typing {
+   from {
+      width: 0;
+   }
+}
+
+@keyframes blink {
+   50% {
+      border-color: transparent;
+   }
 }
 
 .contact-info__sub-header {

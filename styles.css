@@ -270,7 +270,7 @@ body {
 }
 
 .skill-item:nth-child(3n + 1) {
-   background-color: #f0d3f5; /* Light pink */
+   background-color: #f0d3f5;
    color: rgb(84, 83, 83);
    font-weight: 500;
    font-style: italic;
@@ -280,7 +280,7 @@ body {
 }
 
 .skill-item:nth-child(3n + 2) {
-   background-color: #f4e7c2; /* Light yellow */
+   background-color: #f4e7c2;
    color: rgb(84, 83, 83);
    font-weight: 500;
    font-style: italic;
@@ -290,7 +290,51 @@ body {
 }
 
 .skill-item:nth-child(3n) {
-   background-color: #b9d4f6; /* Light blue */
+   background-color: #b9d4f6;
+   color: rgb(84, 83, 83);
+   font-weight: 500;
+   font-style: italic;
+}
+
+.skill-item:nth-child(3n):hover {
+   background-color: #74abee;
+}
+
+.skills__list {
+   display: flex;
+   flex-wrap: wrap;
+   gap: 10px;
+}
+
+.skill-item {
+   padding: 5px 10px;
+   border-radius: 5px;
+   color: #fff;
+   font-weight: bold;
+}
+
+.skill-item:nth-child(3n + 1) {
+   background-color: #f0d3f5;
+   color: rgb(84, 83, 83);
+   font-weight: 500;
+   font-style: italic;
+}
+.skill-item:nth-child(3n + 1):hover {
+   background-color: #eebcf6;
+}
+
+.skill-item:nth-child(3n + 2) {
+   background-color: #f4e7c2;
+   color: rgb(84, 83, 83);
+   font-weight: 500;
+   font-style: italic;
+}
+.skill-item:nth-child(3n + 2):hover {
+   background-color: #f4da93;
+}
+
+.skill-item:nth-child(3n) {
+   background-color: #b9d4f6;
    color: rgb(84, 83, 83);
    font-weight: 500;
    font-style: italic;

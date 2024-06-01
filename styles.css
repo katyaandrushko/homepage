@@ -67,7 +67,7 @@ body {
    }
 }
 
-/* Contact info styles */
+/* CONTACT INFO STYLES */
 
 .contact-info__header,
 .contact-info__sub-header {
@@ -79,6 +79,38 @@ body {
    margin-bottom: 15px;
    text-decoration-color: var(--text-decoration-color);
    text-decoration-line: underline;
+}
+
+.contact-info__header_position {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+
+.typing-demo {
+   width: 22ch;
+   animation: typing 3s steps(17), blink 0.5s step-end infinite alternate;
+   white-space: nowrap;
+   overflow: hidden;
+   border-right: 2px solid;
+   font-size: 20px;
+   color: var(--primary-text-color);
+   margin-bottom: 15px;
+   text-decoration-color: var(--text-decoration-color);
+   text-decoration-line: underline;
+   text-align: center;
+}
+
+@keyframes typing {
+   from {
+      width: 0;
+   }
+}
+
+@keyframes blink {
+   50% {
+      border-color: transparent;
+   }
 }
 
 .contact-info__sub-header {
@@ -107,17 +139,47 @@ body {
    margin-bottom: 20px;
 }
 
+.contact-info__item :hover {
+   color: var(--text-decoration-color);
+   font-style: italic;
+}
 .contact-info__item-icon-wrapper {
    margin-right: 10px;
    width: 20px;
    display: flex;
    justify-content: center;
+   transition: transform 0.1s ease-in-out;
+}
+
+@keyframes pulseAndRotate {
+   0% {
+      transform: scale(1) rotate(0deg);
+   }
+   25% {
+      transform: scale(1.5) rotate(-10deg);
+   }
+   50% {
+      transform: scale(1) rotate(0deg);
+   }
+   75% {
+      transform: scale(1.5) rotate(10deg);
+   }
+   100% {
+      transform: scale(1) rotate(0deg);
+   }
+}
+
+.contact-info__item-icon-wrapper:hover {
+   animation: pulseAndRotate 2s infinite;
 }
 
 .contact-info__item-icon path {
    fill: var(--icon-color);
 }
 
+.contact-info__item-icon path:hover {
+   fill: var(--text-decoration-color);
+}
 .contact-info__item-icon {
    height: 1.1428rem;
    vertical-align: text-bottom;
@@ -130,6 +192,19 @@ body {
    object-fit: cover;
    border: 3px solid;
    border-color: var(--text-decoration-color);
+   animation: continuousPulse 3s infinite;
+}
+
+@keyframes continuousPulse {
+   0% {
+      transform: scale(1);
+   }
+   50% {
+      transform: scale(1.2);
+   }
+   100% {
+      transform: scale(1);
+   }
 }
 
 /* Intro and skills styles */

@@ -235,6 +235,11 @@ body {
    text-align: justify;
 }
 
+.intro_funfacts {
+   display: flex;
+   padding-top: 15px;
+}
+
 .skills__header {
    color: var(--secondary-text-color);
    text-align: center;
@@ -244,6 +249,50 @@ body {
 .skills__text {
    color: var(--secondary-text-color);
    text-align: justify;
+}
+
+.skills__list {
+   display: flex;
+   flex-wrap: wrap;
+   gap: 10px;
+}
+
+.skill-item {
+   padding: 5px 10px;
+   border-radius: 5px;
+   color: #fff;
+   font-weight: bold;
+}
+
+.skill-item:nth-child(3n + 1) {
+   background-color: #f0d3f5; /* Light pink */
+   color: rgb(84, 83, 83);
+   font-weight: 500;
+   font-style: italic;
+}
+.skill-item:nth-child(3n + 1):hover {
+   background-color: #eebcf6;
+}
+
+.skill-item:nth-child(3n + 2) {
+   background-color: #f4e7c2; /* Light yellow */
+   color: rgb(84, 83, 83);
+   font-weight: 500;
+   font-style: italic;
+}
+.skill-item:nth-child(3n + 2):hover {
+   background-color: #f4da93;
+}
+
+.skill-item:nth-child(3n) {
+   background-color: #b9d4f6; /* Light blue */
+   color: rgb(84, 83, 83);
+   font-weight: 500;
+   font-style: italic;
+}
+
+.skill-item:nth-child(3n):hover {
+   background-color: #74abee;
 }
 
 /* Experience and additional info styles
